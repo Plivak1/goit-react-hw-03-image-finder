@@ -99,7 +99,7 @@ export class App extends Component {
     return (
       <>
         <Searchbar handleSubmit={this.handleSubmit} isLoading={isLoading} />
-        {images.length !== 0 ? <ImageGallery images={images} /> : <></>}
+        {images.length !== 0 && <ImageGallery images={images} />}
 
         <ButtonWrap>
           {isLoading ? (
